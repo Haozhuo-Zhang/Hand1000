@@ -15,26 +15,11 @@ Text-to-image generation models have achieved remarkable advancements in recent 
 This project is largely based on [Stable Diffusion and Imagic](https://github.com/justinpinkney/stable-diffusion/blob/main/notebooks/imagic.ipynb).
 
 ```bash
-git clone https://github.com/facebookresearch/sam2.git && cd Hand1000
+git clone https://github.com/Haozhuo-Zhang/Hand1000.git && cd Hand1000
 
 pip install -r requirements.txt
 ```
-<!--
-If you are installing on Windows, it's strongly recommended to use [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) with Ubuntu.
 
-To use the SAM 2 predictor and run the example notebooks, `jupyter` and `matplotlib` are required and can be installed by:
-
-```bash
-pip install -e ".[notebooks]"
-```
-
-Note:
-1. It's recommended to create a new Python environment via [Anaconda](https://www.anaconda.com/) for this installation and install PyTorch 2.5.1 (or higher) via `pip` following https://pytorch.org/. If you have a PyTorch version lower than 2.5.1 in your current environment, the installation command above will try to upgrade it to the latest PyTorch version using `pip`.
-2. The step above requires compiling a custom CUDA kernel with the `nvcc` compiler. If it isn't already available on your machine, please install the [CUDA toolkits](https://developer.nvidia.com/cuda-toolkit-archive) with a version that matches your PyTorch CUDA version.
-3. If you see a message like `Failed to build the SAM 2 CUDA extension` during installation, you can ignore it and still use SAM 2 (some post-processing functionality may be limited, but it doesn't affect the results in most cases).
-
-Please see [`INSTALL.md`](./INSTALL.md) for FAQs on potential issues and solutions.
--->
 ## Dataset Construction
 
 First, download HaGRID dataset from [here](https://github.com/hukenovs/hagrid). Select 1000 images of target gesture for training and testing respectively and randomly.
