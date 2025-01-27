@@ -50,7 +50,7 @@ The prompt is as follows:
 The following sentence contains incorrect hand gesture information or lacks hand gesture information. If it contains incorrect hand gesture information, modify it to 'making phone call hand gesture.' If it lacks hand gesture information, append 'making phone call hand gesture' to the end of the sentence. The original sentence is: 'a girl in a green shirt and glasses giving the peace sign.' The final sentence must include 'making phone call hand gesture' exactly as it is. Provide the modified sentence directly and independently.
 ```
 
-Evaluate the dataset construction quality by running:
+Evaluate the dataset quality by running:
 ```bash
 python dataset_evaluate.py --image_folder {Path to the folder containing images} --image_filenames_path {Path to the file containing image filenames} --captions_path {Path to the file containing captions}
 ```
