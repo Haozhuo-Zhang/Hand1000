@@ -204,7 +204,7 @@ for idx in tqdm(range(nums), desc="Processing images"):
 
     lr = 1e-6
     it = 20
-    opt = torch.optim.Adam([{'params': model.model.parameters()}, {'params': fusion_model.parameters()}], lr=lr)
+    opt = torch.optim.Adam([{'params': model.model.parameters()}], lr=lr)
     criteria = torch.nn.MSELoss()
     history = []
 
